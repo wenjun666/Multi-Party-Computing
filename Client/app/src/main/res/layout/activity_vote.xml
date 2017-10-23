@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_vote"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.wenjun.client1.VoteActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Voting for:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.14" />
+
+    <TextView
+        android:text="Go for a movie or not?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_weight="0.06"
+        android:textSize="30dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Default Vote: No"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewVoted"
+        android:layout_weight="0.14"
+        android:textAlignment="center" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:text="YES!"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:id="@+id/buttonYes"
+        android:layout_weight="0.02" />
+
+    <Button
+        android:text="No!"
+        android:layout_width="136dp"
+        android:layout_height="60dp"
+        android:id="@+id/buttonNo"
+        android:layout_weight="0.03" />
+</LinearLayout>
+
+    <Button
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSubmitVote" />
+</LinearLayout>
